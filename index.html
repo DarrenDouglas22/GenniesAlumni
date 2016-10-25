@@ -1,0 +1,553 @@
+<link href='http://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<style>
+.team_member {
+  width:100%;
+  position:relative;
+  overflow:hidden;
+  height:300px;
+}
+
+.info {
+  height:100%;
+
+}
+
+.info img {
+  width:100%;
+  transition: all .4s ease-out .1s;
+   -moz-transition: all .4s ease-out .1s;
+   -webkit-transition: all .4s ease-out .1s;
+}
+
+.info h5 {
+  padding: 10px 10px 0 0;
+  margin: 0 0 10px 3px;
+  line-height: 1em;
+  opacity: 1;
+  transition: all .2s ease-out .1s;
+   -moz-transition: all .2s ease-out .1s;
+   -webkit-transition: all .2s ease-out .1s;
+  font-size: 1.125em;
+}
+
+.info h6 {
+  padding:0 10px 0 0;
+  font-size:12px;
+  margin:0 0 0 3px;
+  line-height:1em;
+  text-transform:uppercase;
+  color:#999;
+  opacity:1;
+  transition: all .2s ease-out .1s;
+   -moz-transition: all .2s ease-out .1s;
+   -webkit-transition: all .2s ease-out .1s;
+}
+
+.info_reveal {
+  height:100%; 
+  transition: all .3s ease-in 0s;
+   -moz-transition: all .3s ease-in 0s;
+   -webkit-transition: all .23s ease-in 0s;
+  position:absolute;
+  width:100%;
+  left:0;
+  top:-100%;
+  background: rgba(19,148,119,0.9);
+}
+
+.info_reveal h6 {
+  padding: 20px 8px 5px 8px;
+  line-height: 1.1em;
+    margin-bottom: 20px;
+    color: #fff;
+  font-size: 1em;
+}
+
+.info_reveal p {
+  padding:0 8px;
+  font-size:15px;
+  line-height: 1.2em;
+  color: #073a2e;
+  font-weight:400;  
+}
+
+.info_reveal a {
+  color: #073a2e;
+    word-break: break-word;
+  text-decoration:none;
+}
+
+.info_reveal a:hover {
+  color: #073a2e;
+}
+
+
+.responsive_grid {
+ display:block;
+ margin:0;
+ padding:0;
+ list-style:none;
+}
+
+.responsive_grid li {
+ cursor:pointer;
+ width: 16.66667%;
+ padding: 0 10px 10px;
+ display:block;
+ height:auto;
+ float:left;
+ margin-bottom:10px;
+}
+
+.responsive_grid li:hover .info_reveal,
+.responsive_grid li:focus .info_reveal{
+ left: 0;
+ top:0;
+ transition: all .3s ease-out .1s;
+   -moz-transition: all .3s ease-out .1s;
+   -webkit-transition: all .3s ease-out .1s;
+}
+
+.responsive_grid li:hover .info img,
+.responsive_grid li:focus .info img {
+  width:210%;
+  margin-left:-50%;
+  transition: all .4s ease-in 0s;
+   -moz-transition: all .4s ease-in 0s;
+   -webkit-transition: all .4s ease-in 0s;
+}
+
+.responsive_grid li:hover .info h5,
+.responsive_grid li:focus .info h5,
+.responsive_grid li:hover .info h6,
+.responsive_grid li:focus .info h6 {
+  opacity: 0;
+  transition: opacity .2s linear 0s;
+   -moz-transition: opacity .2s linear 0s;
+   -webkit-transition: opacity .2s linear 0s;
+}
+
+
+
+
+/*Just some styles for Codepen preview*/
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  padding: 50px 100px;
+  max-width: 55.25em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h5, h6, .info_reveal a {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+</style>
+<ul class="responsive_grid">
+  <li>
+    <div class="team_member">
+       <div class="info">
+         <img src="pics/jasiyo.jpg" alt=""/>
+         <h4>Jok Asiyo '16</h4>
+         <h5>Global Technology Analyst</h5> 
+         <h6>Deutsche Bank</h6>
+      </div>
+      <div class="info_reveal">
+        <h6>Connect</h6>
+        <p><a href="https://www.linkedin.com/in/jok-asiyo-9b460378"></p>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <div class="team_member">
+       <div class="info">
+         <img src="pics/ddouglas.jpg" alt=""/>
+         <h4>Darren Douglas '16</h4>
+         <h5>Tech Lead and 2016 Fellow</h5> 
+         <h6>Neu | Venture for America</h6>
+      </div>
+      <div class="info_reveal">
+        <h6>Connect</h6>
+        <p><a href="https://www.linkedin.com/in/darren-douglas-87386767"></p>
+      </div>
+    </div>
+  </li>
+    <li>
+    <div class="team_member">
+         <div class="info">
+           <img src="pics/afranz.jpg" alt=""/>
+           <h4>Andrew Franz '16</h4>
+           <h5>Investment Banking Analyst</h5> 
+           <h6>Deutsche Bank</h6>
+        </div>
+        <div class="info_reveal">
+          <h6>Connect</h6>
+          <p><a href="https://www.linkedin.com/in/andrew-franz-937a0881"></p>
+        </div>
+      </div>
+  </li>
+  <li>
+    <div class="team_member">
+         <div class="info">
+           <img src="pics/jetling.jpg" alt=""/>
+           <h4>Jim Etling '16</h4>
+           <h5>Recruiter</h5> 
+           <h6>International Market Recruiters</h6>
+        </div>
+        <div class="info_reveal">
+          <h6>Connect</h6>
+          <p><a href="https://www.linkedin.com/in/james-etling-b1607367"></p>
+        </div>
+      </div>
+  </li>
+  <li>
+    <div class="team_member">
+         <div class="info">
+           <img src="pics/cmclean.jpg" alt=""/>
+           <h4>Clarence Mclean '15</h4>
+           <h5>Relationship Manager</h5> 
+           <h6>Live Oak Bank</h6>
+        </div>
+        <div class="info_reveal">
+          <h6>Connect</h6>
+          <p><a href="https://www.linkedin.com/in/clarence-mclean-54693581"></p>
+        </div>
+      </div>
+  </li>
+  <li>
+    <div class="team_member">
+         <div class="info">
+           <img src="pics/poconnor.jpg" alt=""/>
+           <h4>Patrick O'Connor '15</h4>
+           <h5>Teacher: Benilde Program</h5> 
+           <h6>St. John's College High School</h6>
+        </div>
+        <div class="info_reveal">
+          <h6>Connect</h6>
+          <p><a href="https://www.linkedin.com/in/patrick-o-connor-370b0682"></p>
+        </div>
+      </div>
+  </li>
+  <li>
+    <div class="team_member">
+         <div class="info">
+           <img src="pics/kgill.jpg" alt=""/>
+           <h4>Kevin Gill '14</h4>
+           <h5>Tax Associate</h5> 
+           <h6>PwC</h6>
+        </div>
+        <div class="info_reveal">
+          <h6>Connect</h6>
+          <p><a href="https://www.linkedin.com/in/kevin-gill-367aa1a1"></p>
+        </div>
+      </div>
+  </li>
+  <li>
+    <div class="team_member">
+         <div class="info">
+           <img src="pics/dkimberly.jpg" alt=""/>
+           <h4>Drew Kimberly '14</h4>
+           <h5>Senior Software Developer</h5> 
+           <h6>Nasdaq</h6>
+        </div>
+        <div class="info_reveal">
+          <h6>Connect</h6>
+          <p><a href="https://www.linkedin.com/in/drewkimberly"></p>
+        </div>
+      </div>
+  </li>
+  <li>
+    <div class="team_member">
+         <div class="info">
+           <img src="pics/jadkins.jpg" alt=""/>
+           <h4>Jeremy Adkins '13</h4>
+           <h5>M.D. Candidate at </h5> 
+           <h6>Joan C. Edwards School of Medicine</h6>
+        </div>
+        <div class="info_reveal">
+          <h6>Connect</h6>
+          <p><a href="https://www.linkedin.com/in/jeremy-adkins-459a7066"></p>
+        </div>
+      </div>
+  </li>
+  <li>
+    <div class="team_member">
+         <div class="info">
+           <img src="pics/kbuchanan.jpg" alt=""/>
+           <h4>Kelton Buchanan '13</h4>
+           <h5>Music + Tech</h5> 
+           <h6>SB Projects</h6>
+        </div>
+        <div class="info_reveal">
+          <h6>Connect</h6>
+          <p><a href="https://www.linkedin.com/in/kelton-buchanan-9a813a35"></p>
+        </div>
+      </div>
+  </li>
+  <li>
+    <div class="team_member">
+         <div class="info">
+           <img src="pics/jey.jpg" alt=""/>
+           <h4>J.D. Ey '13</h4>
+           <h5>Assistant Coach and Student</h5> 
+           <h6>Amherst College <br> UMass Sports Management</h6>
+        </div>
+        <div class="info_reveal">
+          <h6>Connect</h6>
+          <p><a href="https://www.linkedin.com/in/johndey44"></p>
+        </div>
+      </div>
+  </li>
+  <li>
+    <div class="team_member">
+         <div class="info">
+           <img src="pics/mgaeta.jpg" alt=""/>
+           <h4>Matt Gaeta '13</h4>
+           <h5>Private Equity Associate</h5> 
+           <h6>Kinderhook Industries</h6>
+        </div>
+        <div class="info_reveal">
+          <h6>Connect</h6>
+          <p><a href="https://www.linkedin.com/in/matthew-gaeta-7a414745"></p>          
+        </div>
+      </div>
+  </li>
+    <li>
+    <div class="team_member">
+         <div class="info">
+           <img src="pics/kbond.jpg" alt=""/>
+           <h4>Kyle Bond '12</h4>
+           <h5>J.D. Candidate</h5> 
+           <h6>Villanova School of Law</h6>
+        </div>
+        <div class="info_reveal">
+          <h6>Connect</h6>
+          <p><a href="nil"></p>
+        </div>
+      </div>
+  </li>
+    <li>
+    <div class="team_member">
+         <div class="info">
+           <img src="pics/wsmith.jpg" alt=""/>
+           <h4>William Smith '12</h4>
+           <h5>Senior Associate</h5> 
+           <h6>Harren Equity Partners</h6>
+        </div>
+        <div class="info_reveal">
+          <h6>Connect</h6>
+          <p><a href="https://www.linkedin.com/in/william-smith-5566b35a"></p>
+        </div>
+      </div>
+  </li>
+    <li>
+    <div class="team_member">
+         <div class="info">
+           <img src="pics/jcimino.jpg" alt=""/>
+           <h4>Jason Cimino '11</h4>
+           <h5>Business Development Manager</h5> 
+           <h6>Raizlabs</h6>
+        </div>
+        <div class="info_reveal">
+          <h6>Connect</h6>
+          <p><a href="https://www.linkedin.com/in/jason-cimino-2930b627"></p>
+        </div>
+      </div>
+  </li>
+    <li>
+    <div class="team_member">
+         <div class="info">
+           <img src="pics/bgoetsch.jpg" alt=""/>
+           <h4>Ben Goetsch '10</h4>
+           <h5>Investment Strategest and Second Vice President</h5> 
+           <h6>Northern Trust Asset Management</h6>
+        </div>
+        <div class="info_reveal">
+          <h6>Connect</h6>
+          <p><a href="https://www.linkedin.com/in/ben-goetsch-cfa-89975122"></p>
+        </div>
+      </div>
+  </li>
+    <li>
+    <div class="team_member">
+         <div class="info">
+           <img src="pics/apayne.jpg" alt=""/>
+           <h4>Andrew Payne '10</h4>
+           <h5>Vice President</h5> 
+           <h6>Harvest Volatility Management LLC</h6>
+        </div>
+        <div class="info_reveal">
+          <h6>Connect</h6>
+          <p><a href="https://www.linkedin.com/in/andrew-payne-cfa-b5a93719"></p>
+        </div>
+      </div>
+  </li>
+    <li>
+    <div class="team_member">
+         <div class="info">
+           <img src="pics/zwhite.jpg" alt=""/>
+           <h4>Zac White '10</h4>
+           <h5>Forward for the Penguin Blues</h5> 
+           <h6>North West Basketball Union Inc</h6>
+        </div>
+        <div class="info_reveal">
+          <h6>Connect</h6>
+          <p><a href="http://nwbu.com.au/club_penguin_blues.htm"></p>
+        </div>
+      </div>
+  </li>
+    <li>
+    <div class="team_member">
+         <div class="info">
+           <img src="pics/igoodman.jpg" alt=""/>
+           <h4>Isaiah Goodman '09</h4>
+           <h5>Financial Representative</h5> 
+           <h6>Northwestern Mutual</h6>
+        </div>
+        <div class="info_reveal">
+          <h6>Connect</h6>
+          <p><a href="https://www.linkedin.com/in/isaiahgoodman"></p>
+        </div>
+      </div>
+  </li>
+    <li>
+    <div class="team_member">
+         <div class="info">
+           <img src="pics/cmchugh.jpg" alt=""/>
+           <h4>Chris McHugh '09</h4>
+           <h5>Assistant Coach</h5> 
+           <h6>Emory University</h6>
+        </div>
+        <div class="info_reveal">
+          <h6>Connect</h6>
+          <p><a href="http://www.emoryathletics.com/sports/mbkb/coaches/Mchugh_chris?view=bio"></p>
+        </div>
+      </div>
+  </li>
+    <li>
+    <div class="team_member">
+         <div class="info">
+           <img src="pics/kjones.jpg" alt=""/>
+           <h4>Kirk Jones '09</h4>
+           <h5>Vice President Leveraged Finance Capital Markets</h5> 
+           <h6>Citi</h6>
+        </div>
+        <div class="info_reveal">
+          <h6>Connect</h6>
+          <p><a href="https://www.linkedin.com/in/kirk-jones-9b847511"></p>
+        </div>
+      </div>
+  </li>
+    <li>
+    <div class="team_member">
+         <div class="info">
+           <img src="pics/csauers.jpg" alt=""/>
+           <h4>Craig Sauers '09</h4>
+           <h5>Manager, Financial Reporting</h5> 
+           <h6>Under Armour</h6>
+        </div>
+        <div class="info_reveal">
+          <h6>Connect</h6>
+          <p><a href="https://www.linkedin.com/in/craig-sauers-cpa-3930b517"></p>
+        </div>
+      </div>
+  </li>
+  <li>
+    <div class="team_member">
+         <div class="info">
+           <img src="pics/bheller.jpg" alt=""/>
+           <h4>Ben Heller '09</h4>
+           <h5>Associate</h5> 
+           <h6>Barclays</h6>
+        </div>
+        <div class="info_reveal">
+          <h6>Connect</h6>
+          <p><a href="https://www.linkedin.com/in/ben-heller-26b59810"></p>
+        </div>
+      </div>
+  </li>
+  <li>
+    <div class="team_member">
+         <div class="info">
+           <img src="pics/rowens.jpg" alt=""/>
+           <h4>Ryan Owens'09</h4>
+           <h5>Sales Representative</h5> 
+           <h6>Stryker Orthopaedics</h6>
+        </div>
+        <div class="info_reveal">
+          <h6>Connect</h6>
+          <p><a href="https://www.linkedin.com/in/ryan-owens-58563241"></p>
+        </div>
+      </div>
+  </li>
+  <li>
+    <div class="team_member">
+         <div class="info">
+           <img src="pics/fkusimo.jpg" alt=""/>
+           <h4>Femi Kusimo '08</h4>
+           <h5>Vice President</h5> 
+           <h6>Goldman Sachs</h6>
+        </div>
+        <div class="info_reveal">
+          <h6>Connect</h6>
+          <p><a href="https://www.linkedin.com/in/femi-kusimo-396a12a"></p>
+        </div>
+      </div>
+  </li>
+  <li>
+    <div class="team_member">
+         <div class="info">
+           <img src="pics/gbienemann.jpg" alt=""/>
+           <h4>Greg Bienemann '08</h4>
+           <h5>Vice President, Relationship Management, Markets Group</h5> 
+           <h6>BNY Mellon</h6>
+        </div>
+        <div class="info_reveal">
+          <h6>Connect</h6>
+          <p><a href="https://www.linkedin.com/in/greg-bienemann-423329aa"></p>
+        </div>
+      </div>
+  </li>
+  <li>
+    <div class="team_member">
+         <div class="info">
+           <img src="pics/cdavis.jpg" alt=""/>
+           <h4>Chris Davis '07</h4>
+           <h5>Vice President Leveraged Finance Capital Markets</h5> 
+           <h6>Citi</h6>
+        </div>
+        <div class="info_reveal">
+          <h6>Connect</h6>
+          <p><a href="https://www.linkedin.com/in/kirk-jones-9b847511"></p>
+        </div>
+      </div>
+  </li>
+  <li>
+    <div class="team_member">
+         <div class="info">
+           <img src="pics/chalkitis.jpg" alt=""/>
+           <h4>Chris Halkitis '07</h4>
+           <h5>Attorney</h5> 
+           <h6>Sheppard, Brett, Stewart, Hersch, Kinsey &amp; Hill, P.A</h6>
+        </div>
+        <div class="info_reveal">
+          <h6>Connect</h6>
+          <p><a href="https://www.sbshlaw.com/attorneys/christopher-e-halkitis/"></p>
+        </div>
+      </div>
+  </li>
+  <li>
+    <div class="team_member">
+         <div class="info">
+           <img src="pics/awhite.jpg" alt=""/>
+           <h4>Alex White '07</h4>
+           <h5>Associate</h5> 
+           <h6>WilmerHale</h6>
+        </div>
+        <div class="info_reveal">
+          <h6>Connect</h6>
+          <p><a href="https://www.linkedin.com/in/alex-white-b3025471"></p>
+        </div>
+      </div>
+  </li> 
+</ul>
